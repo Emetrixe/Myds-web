@@ -5,6 +5,9 @@
     font-family: "Gotham";
     src: url(/font/Gotham-Bold.otf);
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0px;
     padding: 0px;
@@ -51,8 +54,9 @@ body{
 .nav-menu a{
     text-decoration: none;
     color: #5d5d5a;
-    font-size: 24pt;
-    font-family: 'Dongle', sans-serif;
+    font-size: 16pt;
+    font-weight: bold;
+    font-family: 'Yantramanav', sans-serif;
     transition: all 0.3s ease-in-out;
 }
 .img-nav{
@@ -69,8 +73,8 @@ body{
 }
 #dropdown-menu li{
     text-align: center;
-    height: max-content;
-    width: 170px;
+    height: 59px;
+    width: 180px;
     padding: 10px 10px 0px 10px ;
     border: 0px solid rgba(0, 0, 0, 0.1);
     margin: 0px;
@@ -83,7 +87,7 @@ body{
 .dropdown:hover #dropdown-menu {
     display: block;
     width: max-content;
-    height: auto;
+    height: 210px;
     background-color: rgb(255, 255, 255);
     padding: 0px;
     margin-top: 15px;
@@ -182,12 +186,21 @@ body{
 }
 .container-grid{
     display: flex;
-    flex-direction: column;
-    margin: 105px 0px 0px 0px;
-    width: 95%;
+    justify-content: start;
+    margin: 10px 0px 0px 0px;
+    width: 80%;
     height: max-content;
     border: 0px solid black;
-    
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+.ini-seccion{
+    margin: 120px 0px 20px 0px ;
+}
+.ini-seccion h1{
+    font-family: "Gotham", sans-serif;
+    margin: 0px;
+    font-size: 52pt;
 }
 .title-1{
     display: flex;
@@ -195,10 +208,21 @@ body{
     justify-content: center;
     width: 100%;
 }
-.title-1 h1{
+.title-1 a{
     border: 0px solid black;
     margin: 10px 30px 10px 0px;
     font-family: 'Urbanist', sans-serif;
+    font-size: 20pt;
+    text-decoration: none;
+}
+.card-indice{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 50px;
+    margin: 0px 0px 20px 0px;
 }
 .grid-cards{
     display: flex;
@@ -206,29 +230,41 @@ body{
     flex-direction: column;
     border: 0px solid rgb(255, 0, 0);
     width: 100%;
-    height: 100%;
-    margin: 0px 0px 10px 0px;
+    height: max-content;
+    margin: 0px 30px 10px 0px;
+    padding: 45px;
 }
 .card-prd{
     display: flex;
     flex-flow: wrap;
     justify-content: center;
-    width: 90%;
+    width: 1350px;
     height: 450px;
     border: 0px solid blue;
     border-radius: 60px;
-    margin: 20px;
+    margin: 0px 0px 30px 0px;
     padding: 30px;
     box-shadow:0px 10px 40px -10px rgba(102, 102, 102, 0.4);
+}
+.text-star{
+    text-align: start;
+
+}
+.text-center{
+    text-align: center;
+
+}
+.text-end{
+    text-align: end;
+
 }
 .card-prd h2{
     width:100%;
     height: min-content;
-    text-align: center;
     font-family: "Gotham", sans-serif;
     border: 0px solid black;
     font-size: 32pt;
-    margin: 0px;
+    margin: 20px 20px 0px 20px;
 }
 .img-seccion{
     display: flex;
@@ -240,25 +276,31 @@ body{
     border: 0px solid black;
     border-radius: 0% 0% 50% 50%;
     background: hsla(0, 0%, 100%, 1);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(207, 207, 207, 0) 50%, #a7f3c98e 100%);
-    margin: 0px 42px 0px 0px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(207, 207, 207, 0.233) 50%, rgba(168, 168, 168, 0.404) 80%);
+    margin: 0px 32px 0px 32px;
     overflow: hidden;
-    box-shadow: -1px 104px 80px -86px rgba(0,0,0,0.48);
     bottom: 50px;
+    transition: all 0.7s ease-in-out;
+}
+.img-seccion:hover{
+    overflow: visible;
+    height: 430px;
+
 }
 .img-seccion img{
     background-color: rgba(255, 255, 255, 0);
     position: absolute;
-    width: 320px;
+    width: 340px;
     height:380px;
-    bottom: -15px;
-    border:none;
-    border-radius: 0px;
-    transition: all 0.5s ease-in-out;
+    bottom: -20px;
+    border:0px solid black;
+    transition: all 1.5s ease-in-out;
     z-index: 1;
+    transform: scale(1.1);
 }
 .img-seccion img:hover{
-    bottom: 0px;
+    bottom: 15px;
+    transform: scale(1.3);
 }
 .info-seccion{
     display: flex;
@@ -270,7 +312,7 @@ body{
 }
 .info-seccion p{
     font-family: 'Yantramanav', sans-serif;
-    font-size: 20pt;
+    font-size: 16pt;
     margin: 0px 0px 40px 0px;
 }
 .info-seccion table{
