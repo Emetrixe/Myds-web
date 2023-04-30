@@ -14,13 +14,14 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #f1fcf3;
 }
 .header-desktop{
-    background-color: #e9e3d548;
+    background-color: #1d953c;
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 80px;
+    height: 70px;
     padding-top: 10px;
     box-shadow: 0px 5px 20px 0px rgba(102, 102, 102, 0.2);
     position: absolute;
@@ -53,7 +54,7 @@ body{
 }
 .nav-menu a{
     text-decoration: none;
-    color: #5d5d5a;
+    color: #e9e9e9;
     font-size: 16pt;
     font-weight: bold;
     font-family: 'Yantramanav', sans-serif;
@@ -201,6 +202,7 @@ body{
     font-family: "Gotham", sans-serif;
     margin: 0px;
     font-size: 52pt;
+    color: #2f5724;
 }
 .title-1{
     display: flex;
@@ -214,6 +216,7 @@ body{
     font-family: 'Urbanist', sans-serif;
     font-size: 20pt;
     text-decoration: none;
+    color: #A24CBB;
 }
 .card-indice{
     display: flex;
@@ -235,6 +238,7 @@ body{
     padding: 45px;
 }
 .card-prd{
+    background-color: white;
     display: flex;
     flex-flow: wrap;
     justify-content: center;
@@ -260,6 +264,7 @@ body{
 }
 .card-prd h2{
     width:100%;
+    color: #448930;
     height: min-content;
     font-family: "Gotham", sans-serif;
     border: 0px solid black;
@@ -277,6 +282,7 @@ body{
     border-radius: 0% 0% 50% 50%;
     background: hsla(0, 0%, 100%, 1);
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(207, 207, 207, 0.233) 50%, rgba(168, 168, 168, 0.404) 80%);
+    background-image: url(/img/cultivo_2.jpg);
     margin: 0px 32px 0px 32px;
     overflow: hidden;
     bottom: 50px;
@@ -285,7 +291,6 @@ body{
 .img-seccion:hover{
     overflow: visible;
     height: 430px;
-
 }
 .img-seccion img{
     background-color: rgba(255, 255, 255, 0);
@@ -319,13 +324,13 @@ body{
     font-family: 'Urbanist', sans-serif;
     text-align: center;
     border: 0px solid black;
-    width: 100%;
+    width: 98%;
     height: 100px;
     border-collapse: collapse;
-    box-shadow:0px 15px 40px -10px #34d38b23;
+    box-shadow:0px 15px 40px -10px #43893054;
 }
 
 th{
-    background-color: #a7f3c9;
+    background-color: #a9dc99;
     height: 50px;
 }
